@@ -2,3 +2,6 @@
 	path = Ducky/vendor/spdlog
 	url = https://github.com/gabime/spdlog
 
+[submodule "Ducky/vendor/GLFW"]
+	path = Ducky/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
