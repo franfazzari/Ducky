@@ -1,0 +1,9 @@
+[submodule "Ducky/vendor/spdlog"]
+	path = Ducky/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "Ducky/vender/GLFW"]
+	path = Ducky/vender/GLFW
+	url = https://github.com/TheCherno/glfw
+[submodule "Ducky/vendor/GLFW"]
+	path = Ducky/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
