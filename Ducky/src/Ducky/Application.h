@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Core.h"
+#include "Events/Event.h"
+//#include "Window.h"
 
 namespace Ducky
 {
@@ -11,6 +13,9 @@ namespace Ducky
 		virtual ~Application();
 
 		void Run();
+
+	private:
+
 	};
 	
 	// To be defined in CLIENT

@@ -1,4 +1,5 @@
 #pragma once
+
 #ifdef DK_PLATFORM_WINDOWS
 	#ifdef DK_BUILD_DLL
 		#define DUCKY_API __declspec(dllexport)
@@ -8,3 +9,7 @@
 #else
 #error Ducky only supports  Windows!
 #endif
+
+
+
+#define BIT(x) (1 << x)
