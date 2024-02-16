@@ -12,6 +12,7 @@ int main(int argc, char** argv)
 	DK_CORE_WARN("Initialized Log!");
 	int a = 5;
 	DK_INFO("Hello! var={0}", a);
+
 	auto app = Ducky::CreateApplication();
 	app->Run();
 	delete app;

@@ -10,8 +10,6 @@ namespace Ducky
 	{
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }
-	public:
-		inline int GetKeyCode() const { return m_KeyCode; }
 
 		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
 	protected:
@@ -46,6 +44,7 @@ namespace Ducky
 	public:
 		KeyReleasedEvent(int keycode)
 			: KeyEvent(keycode) {}
+		
 
 		std::string ToString() const override
 		{
@@ -55,5 +54,21 @@ namespace Ducky
 		}
 
 		EVENT_CLASS_TYPE(KeyReleased)
+	};
+
+	class DUCKY_API KeyTypedEvent : public KeyEvent
+	{
+	public:
+		KeyTypedEvent(int keycode)
+			: KeyEvent(keycode) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "KeyTypedEvent: " << m_KeyCode;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyTyped)
 	};
 }
