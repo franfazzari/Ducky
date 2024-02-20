@@ -7,6 +7,8 @@
 #include "Events/ApplicationEvent.h"
 #include "Ducky/LayerStack.h"
 
+#include "Ducky/ImGui/ImGuiLayer.h"
+
 
 namespace Ducky
 {
@@ -30,6 +32,7 @@ namespace Ducky
 		bool OnWindowClosed(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

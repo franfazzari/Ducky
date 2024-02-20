@@ -1,7 +1,7 @@
 project "Glad"
 	kind "StaticLib"
 	language "C"
-	staticruntime "off"
+	staticruntime "on"
 	warnings "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -44,11 +44,10 @@ project "Glad"
 		sanitize { "Address" }
 		flags { "NoRuntimeChecks", "NoIncrementalLink" }
 
+	filter "configurations:Debug"
+		runtime "debug"
+		symbols "on"
+
 	filter "configurations:Release"
 		runtime "Release"
-		optimize "speed"
-
-    filter "configurations:Dist"
-		runtime "Release"
-		optimize "speed"
-        symbols "off"
+		optimize "on"

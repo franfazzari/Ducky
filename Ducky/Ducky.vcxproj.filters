@@ -16,9 +16,6 @@
     <Filter Include="src\Ducky\Platform">
       <UniqueIdentifier>{5074529E-3C58-13F4-A5B8-0D4791BBFD75}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Ducky\Platform\OpenGL">
-      <UniqueIdentifier>{84237799-F0E5-AA23-3996-39B0A5978301}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\Ducky\Platform\Windows">
       <UniqueIdentifier>{8A6E7720-767E-23F1-DF37-880FCB66128A}</UniqueIdentifier>
     </Filter>
@@ -89,9 +86,6 @@
     </ClInclude>
     <ClInclude Include="src\Ducky\MouseButtonCodes.h">
       <Filter>src\Ducky</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Ducky\Platform\OpenGL\imgui_impl_opengl3.h">
-      <Filter>src\Ducky\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Ducky\Platform\Windows\WindowsInput.h">
       <Filter>src\Ducky\Platform\Windows</Filter>
@@ -1358,6 +1352,9 @@
     <ClCompile Include="src\Ducky\Application.cpp">
       <Filter>src\Ducky</Filter>
     </ClCompile>
+    <ClCompile Include="src\Ducky\ImGui\ImGuiBuild.cpp">
+      <Filter>src\Ducky\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Ducky\ImGui\ImGuiLayer.cpp">
       <Filter>src\Ducky\ImGui</Filter>
     </ClCompile>
@@ -1369,9 +1366,6 @@
     </ClCompile>
     <ClCompile Include="src\Ducky\Log.cpp">
       <Filter>src\Ducky</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Ducky\Platform\OpenGL\imgui_impl_opengl3.cpp">
-      <Filter>src\Ducky\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Ducky\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Ducky\Platform\Windows</Filter>
