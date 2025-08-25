@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Ducky/CopilotIndices/17.14.995.13737
+/.vs/Ducky/FileContentIndex
+/.vs/Ducky/v17/ipch/AutoPCH
+/.vs/Ducky/v17
+/.vs
+/bin/Release-x64/Ducky
+/bin/Release-x64/Sandbox
+/bin-int/Release-x64
+/Ducky
+/Sandbox
+/Ducky.sln
